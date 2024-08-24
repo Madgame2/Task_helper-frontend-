@@ -1,0 +1,154 @@
+header{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    .header_layout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .LOGO{
+            flex: 1;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav{
+            flex: 2;
+        }
+        .SIGN{
+            flex:1;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
+
+.welcome_main{
+    display: flex;
+    flex-direction: column;     
+    .part_1{
+        display: flex;
+        //height: 700px;
+        .contaner{
+            display: flex;
+            flex-direction: row;
+
+            .line{
+                display: flex;
+                flex-direction: column;
+            }
+            .main_info .contaner_welcom{
+                display: flex;
+                flex-direction: column;
+                gap: 5%;
+            }
+        }
+    }
+    .part_2{
+        .contaner{
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 10%;
+            padding-right: 2.5%;
+
+            .authorization{
+                .contaner{
+                    display: flex;
+                    flex-direction: row;
+                    .form{
+                        flex-grow: 1;
+                        flex:6;
+
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                    .separate_line{
+                        flex: 1;
+                    }
+                    .logo_authorization{
+                        flex: 3;
+
+                        display: flex;
+                        margin-left: 5%;
+                        //justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .logo{
+                display: flex;
+            }
+        }
+    }  
+}
+
+
+.user_page{
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 20px 50px;
+        position: relative;
+
+        .interactive{
+            .contaner{
+            display: flex;
+            gap: 20px;
+            flex-direction: row !important;
+            }
+        }
+    }
+
+    main{
+        .interactive{
+            .visible_area{
+                .contaner{
+                    display: flex;
+                    flex-direction: column;
+
+                    .sign_in{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10%;
+
+
+
+                        
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+
+                    }
+
+                    .sign_up{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10%;
+
+                        form{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

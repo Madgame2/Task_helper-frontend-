@@ -1,0 +1,21 @@
+@mixin authorization_button{
+
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+    background-color: #4500D9;
+    font-size: 28px;
+    border-radius: 10px;
+    border: 2px solid #A1A1A1;
+
+    transition: background-color 0.1s linear;
+
+    &:hover{
+        background-color: #6C2DF3;
+        transition: background-color 0.1s linear;
+    }
+}

@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+
+body{
+    background-color: $BG;
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    header{
+        height: 150px !important;
+        flex-shrink: 0;
+
+    }
+
+    main{
+        flex-grow: 1;
+    }
+
+    footer{
+        height: 100px;
+    }
+}
+
+.header{
+    background-color: $Header_BG;
+    width: 96%;
+    margin-top: 15px;
+    height: 60%;
+
+    border-radius: 25px;
+
+    box-shadow:-10px 20px 50px $Header_shadow_1;
+
+    .header_layout{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top:-100%;
+
+        background-color: $Header_BG;
+        border-radius: 25px;
+        .LOGO, .nav, .SIGN {
+            height: 100%;
+        }
+        .LOGO{
+            .name{
+
+                font-size: 35px;
+                font-weight: bold;
+            }
+        } 
+        .SIGN{
+            font-size: 20px;
+
+            .sign_in{
+            margin-right: 30px;
+            }
+            .sign_up{
+                border: 2px solid $Text_color;
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+}
+.header::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 12px -9px 50px $Header_shadow_2;
+    border-radius: 25px;
+
+    position: relative;
+    //top: -25%;
+}
+
+
+.welcome_main{
+
+    .part_1{
+        position: relative;
+        flex-direction: row;
+
+        .BG{
+            position: relative;
+            width: 100% !important;
+        }
+        .contaner{
+            position: absolute;
+            //background-color: aqua;
+            height: 100%;
+            width: 100%;
+
+            padding-left: 10%;
+            padding-right: 2.5%;
+            box-sizing: border-box;
+
+            .line{
+                width: 80px !important;
+                //height: 100%;
+                padding-top: 30px;
+                .curcle_head{
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    .curcle{
+                        border: 4px solid rgba($color: #808080, $alpha: 0.4);
+                        padding: 4px;
+                        border-radius: 50%;
+                    }
+                }
+                .line_1{
+                    height: 35%;
+                    margin-top: 20%;
+                    .line_blur{
+                        background:linear-gradient(#2C2C2C, #9663D7,#3300FF) ;
+                        //padding: 6px;
+                        //width: 0;
+                        
+                    }
+                    .line_clear{
+                        background:linear-gradient(#2C2C2C, #9663D7,#3300FF) ;
+                        padding: 3px;
+                        width: 0;
+
+                        border-radius: 20px;
+                    }
+                }
+                .line_2{
+                    height: 50%;
+                    margin-top: 20%;
+                    .line_blur{
+                        background: linear-gradient(#3300FF,#00D1ED,#00E1AB);
+                    }
+                    .line_clear{
+                        background: linear-gradient(#3300FF,#00D1ED,#00E1AB);
+                        padding: 3px;
+                        border-radius: 20px;
+                    }
+                }
+                .logo{
+                    background-color: #D9D9D9;
+                    padding: 25%;
+                    margin-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 30px rgba($color: #3300FF, $alpha: 0.7);
+                }
+                }
+            .main_info{
+                width: 100%;
+                height: 100%;
+
+                .contaner_welcom{
+                    height: 100%;
+                    padding-top: 5%;
+                    align-items: center;
+                    //justify-content: center;
+                    .logo{
+                        background-color: #D9D9D9;
+                        width: 225px;
+                        height: 225px;
+                        border-radius: 50%;
+                    }
+                    .NAME{
+                        font-size: 60px;
+                        font-weight: bold;
+                    }
+                    .description{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .part_2{
+        .contaner{
+            padding-left: 5%;
+            .logo{
+                padding-left: 5.5%;
+                position: relative;
+                margin-top: 2%;
+                width: 74.891px;
+                text-align: center;
+                justify-content: center;
+                svg{
+                    position: relative;
+                }
+                .shadow{
+                    position: absolute;
+                    width: 40px;
+                    height: 50px;
+                    top: 0;
+                    border-radius: 50%;
+                    background-color: #00E1AB;
+                    filter: blur(25px);
+
+                    text-align: center;
+                }
+            }
+        }
+        .authorization{
+            .contaner{
+                padding: 0;
+                margin-right: 2.5%;
+                margin-top: 3%;
+                //height: 400px;
+                background-color: #181818;
+                border-radius: 35px;
+                border: 4px solid #30363D;
+
+                .form{
+                    height: 400px;
+                    margin-top: 2%;
+                    margin-left: 8%;
+                    
+
+                    h1{
+                        font-size: 55px;
+                        font-weight: bold;
+                        color: $authorization_h_color;
+                    }
+                    p{
+                        font-size: 32px;
+                    }
+
+                    form{
+                        margin-top: 5%;
+                        margin-right: 40%;
+                        input{
+                            margin-bottom: 2%;
+                            padding: 1%;
+                            font-size: 18px;
+                            color: #181818  ;
+                            border-radius: 8px;
+                            border: 2px solid #30363D;
+
+                        }
+                        label{
+                            font-size: 15px;
+                        }
+                        button{
+                            margin-top: 5%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-top: 1.5%;
+                            padding-bottom: 1.5%;
+                            padding-right: 5.5%;
+                            padding-left: 5.5%;
+                            background-color: #4500D9;
+                            font-size: 28px;
+                            border-radius: 10px;
+                            border: 2px solid #A1A1A1;
+                        }
+                    }
+                }
+                .separate_line{
+                    .line{
+                        margin-top: 30%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 80%;
+                        width: 0;
+                        padding: 2px;
+                        border-radius: 5px;
+
+                        background-color: #30363D;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.line_node{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .line_clear{
+        height: 100%;
+        position: relative;
+        top:0;
+    }
+    .line_blur{
+        position: relative;
+        height: 100%;
+        top:-100%;
+        filter: blur(15px);
+    }
+}
+
+
+.user_page{
+
+    background-color: $user_page_BG;
+    header{
+        padding-top: 1.5%;
+        height: auto !important;
+
+        z-index: 1;
+        .logo{
+            
+            font-size: 50px;
+            font-weight: bold;
+
+            margin-left: auto;
+            margin-right: 18%;
+        }
+
+        .interactive{
+            padding-right: 10%;
+
+
+
+        .contaner{
+
+            .active{
+                background-color: #005A8C;
+            }
+            button{
+                padding-left: $user_page_buttons_horisontal_pading;
+                padding-right: $user_page_buttons_horisontal_pading;
+
+                padding-top: $user_page_buttons_vertical_pading;
+                padding-bottom: $user_page_buttons_vertical_pading;
+
+                //margin-right: 20px;
+
+                background-color: $user_page_BG;
+                border: 2px solid #30363D;
+                border-radius: 12px;
+
+                font-size: 15px;
+            }
+
+            button:hover:not(.active) {
+                background-color: #30363D;
+
+                transition: all 0.2s linear;
+            }
+        }
+    }
+    }
+
+    main{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+
+        .BG{
+            width: 100%;
+            height: 100%;
+
+            overflow: hidden;
+
+            .svg_1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            }
+            
+        
+
+            .svg_2{
+            position: absolute;
+            top: 70px;
+            left: 130px;
+
+            //  animation: dioganal 6s linear infinite;
+            }
+
+
+            .svg_3{
+            position: relative;
+
+            top: 64vh;
+            left: 80vw;
+            
+            }
+
+            .svg_4{
+            position: relative;
+            top: 8vh;
+            left: 34vw;
+            }
+
+            .svg_5{
+                position: absolute;
+                top: 60vh;
+                left: 26vw;
+
+                animation: spin 80s linear infinite;
+            }
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        .interactive{
+            position: inherit;
+
+            top: 20vh;
+            left: 34vw;
+
+            width: 500px;
+            height: 60%;
+
+            background-color: #232323;
+            border: 3px solid #30363D;
+            border-radius: 20px;
+
+            .visible_area{
+                width: 100%;
+                height: 100%;
+
+                overflow: hidden;
+
+                .contaner{
+                    height: 100%;
+                    position: relative;
+                    transition: top 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+                    top: 0;
+
+                    .sign_in{
+                        height: 100%;
+
+                        flex-shrink: 0;
+
+                        h1{
+                            text-align: center;
+                            margin-top: 10%;
+
+                            font-size: 45px;
+                            color: $authorization_h_color;
+                        }
+
+                        form{
+                            padding-left: 10%;
+                            padding-right: 10%;
+
+                             label{
+                                margin-top: 5%;
+                                margin-left: 4%;
+                                font-size: 18px;
+                             }
+
+                             input{
+                                padding: 2%;
+                                font-size: 20px;
+                                border-radius: 10px;
+
+                                color: black;
+
+                                border: 3px solid #30363D;
+                             }
+                            button{
+                                @include authorization_button;
+                                margin-top: 20% ;
+                                padding-left: 10%;
+                                padding-right: 10%;
+                            }
+
+                            a{
+                                margin-top: 5%;
+                                margin-left: 5%;
+                                font-size: 20px;
+                                color: #00D1FF;
+                            }
+                        }
+                    }
+
+                    .sign_up{
+                        height: 100%;
+
+                        flex-shrink: 0;
+
+                        h1{
+                            text-align: center;
+                            margin-top: 10%;
+
+                            font-size: 45px;
+                            color: #7C04A6;
+                        }
+                        form{
+                            padding-left: 10%;
+                            padding-right: 10%;
+
+                             label{
+                                margin-top: 5%;
+                                margin-left: 4%;
+                                font-size: 18px;
+                             }
+
+                             input{
+                                padding: 2%;
+                                font-size: 20px;
+                                border-radius: 10px;
+
+                                color: black;
+
+                                border: 3px solid #30363D;
+                             }
+                            button{
+                                @include authorization_button;
+                                margin-top: 20% ;
+                                padding-left: 10%;
+                                padding-right: 10%;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
