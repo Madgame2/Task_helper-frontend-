@@ -67,7 +67,7 @@
                             <div class="line_blur"></div>
                         </div>
                         <div class="logo"></div>
-                        <div class="line_node line_2">
+                        <div class="line_node line_2 hide" id="line_2">
                             <div class="line_clear"></div>
                             <div class="line_blur"></div>
                         </div>
@@ -83,14 +83,14 @@
             </div>
             <div class="part_2">
                 <div class="contaner">
-                    <div class="logo">
+                    <div class="logo hide" id="hideble_logo">
                         <div class="shadow"> </div>
                         <svg width="40" height="50" viewBox="0 0 49 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 60.5849C2 48.0022 12.0736 37.8019 24.5 37.8019C36.9264 37.8019 47 48.0022 47 60.5849M37.3571 15.0189C37.3571 22.209 31.6007 28.0377 24.5 28.0377C17.3992 28.0377 11.6429 22.209 11.6429 15.0189C11.6429 7.82874 17.3992 2 24.5 2C31.6007 2 37.3571 7.82874 37.3571 15.0189Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                                                 
                     </div>
                     <div class="authorization">
-                        <div class="contaner">
+                        <div class="contaner hide" id="form">
                             <div class="form">
                                 <h1>Create an account</h1>
                                 <p>and start creating art</p>
@@ -99,7 +99,12 @@
                                     <input type="email" name="Email" id="mail" placeholder="you@company.com">
                                     <label for="password">Password</label>
                                     <input type="password" name="password" id="password" placeholder="*********">
-                                    <button type="submit">Sign in</button>
+                                    <label for="confirm_password">Confirm password</label>
+                                    <input type="password" name="confirm_password" id="confirm_password" placeholder="*********" required>
+                                    <div class="errors" id="errors_area">
+
+                                    </div>
+                                    <button type="submit" id="submit">Sign in</button>
                                 </form>
                             </div>
                             <div class="separate_line">
@@ -117,5 +122,8 @@
         </main>
         <footer>Footer</footer>
     </div>
+    <script src="JS/errors.js"></script>
+    <script src="JS/Password_controller.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
